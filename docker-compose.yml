@@ -1,0 +1,10 @@
+version: '2.1'
+services:
+  storeWebApp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: store_web_app:v1
+    container_name: store_web_app
+    ports:
+      - 8080:8080
